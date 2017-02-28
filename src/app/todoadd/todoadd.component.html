@@ -1,0 +1,13 @@
+<md-card>
+  <md-input-container>
+    <input mdInput placeholder="Title" [(ngModel)]="title">
+  </md-input-container>
+  <md-input-container>
+    <input mdInput placeholder="Description" [(ngModel)]="description">
+  </md-input-container>
+  <md-select placeholder="Priority" [(ngModel)]="priority">
+    <md-option *ngFor="let p of keys()">{{p}}</md-option>
+  </md-select>
+  <md-checkbox [(ngModel)]="finish">Finish</md-checkbox>
+  <button md-button (click)="add()">Add</button>
+</md-card>

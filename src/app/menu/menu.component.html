@@ -1,0 +1,20 @@
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item routerLink="/">
+    <span >Home</span>
+  </button>
+  <button md-menu-item routerLink="/todolist">
+    <span>todolist</span>
+  </button>
+  <button md-menu-item (click)="authenticate()">
+    <span>authenticate</span>
+  </button>
+  <button md-menu-item (click)="test()">
+    <span>test</span>
+  </button>
+  <button md-menu-item (click)="logout()">
+    <span>logout</span>
+  </button>
+</md-menu>

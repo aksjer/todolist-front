@@ -1,0 +1,11 @@
+
+<app-searchtodo (event)="searchTodo($event)"></app-searchtodo>
+<app-todoadd (event)="add($event)"></app-todoadd>
+<div *ngFor="let todo of todolist">
+  <app-todo [todo]="todo" [@mytest]="state" (event)="selected($event)" (event2)="unselected($event)"></app-todo>
+</div>
+<!--<div [@mytest]="state">div bidon</div>-->
+<!--<button md-button [disabled]="check()" (click)="delete()">Delete</button>-->
+<!--<button md-button [class.hehe]="check()" (click)="delete()">Delete</button>
+<button md-button (click)="toggleMove()">Toggle</button>
+<button md-button (click)="getTodos()">check todos</button>-->

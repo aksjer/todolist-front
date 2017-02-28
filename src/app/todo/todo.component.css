@@ -1,0 +1,9 @@
+md-card{
+  opacity:0.5;
+  transition: .5s;
+}
+
+md-card:hover{
+  opacity:1;
+  background-color: lightgrey;
+}
